@@ -21,8 +21,8 @@ public class Ex01 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    String compute(String input) {
-        String output = null;
+    int compute(int[] input) {
+        int output = 0;
         //put your logic here
         return output;
     }
