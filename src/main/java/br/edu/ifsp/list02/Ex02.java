@@ -25,7 +25,7 @@ public class Ex02 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    String compute(String line1, String line2) {
+    String compute(int[] arrayA, int[] arrayB) {
         String output = null;
         //put your logic here
         return output;

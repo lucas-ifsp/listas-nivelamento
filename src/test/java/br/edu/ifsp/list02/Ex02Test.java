@@ -18,6 +18,15 @@ class Ex02Test {
     """)
     void testCompute(String line1, String line2, String expected){
         Ex02 sut = new Ex02();
-        assertThat(sut.compute(line1, line2)).isEqualTo(expected);
+        assertThat(sut.compute(stringToArray(line1), stringToArray(line2))).isEqualTo(expected);
+    }
+
+    private static int[] stringToArray(String arrayString) {
+        String[] stringValues = arrayString.split(", ");
+        int[] array = new int[stringValues.length];
+        for (int i = 0; i < stringValues.length; i++) {
+            array[i] = Integer.parseInt(stringValues[i]);
+        }
+        return array;
     }
 }
