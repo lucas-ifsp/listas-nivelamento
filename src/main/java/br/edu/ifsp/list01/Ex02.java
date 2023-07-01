@@ -18,8 +18,6 @@ package br.edu.ifsp.list01;
 
 import java.util.Scanner;
 
-import static br.edu.ifsp.list01.Ex02SolutionKt.solve;
-
 public class Ex02 {
 
     public static void main(String[] args) {
