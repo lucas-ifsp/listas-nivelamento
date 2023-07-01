@@ -16,6 +16,10 @@ package br.edu.ifsp.list01;
     Qualquer valor fora do domínio de entrada tem como saída esperada a String "Erro".
 */
 
+import java.util.Scanner;
+
+import static br.edu.ifsp.list01.Ex02SolutionKt.solve;
+
 public class Ex02 {
 
     public static void main(String[] args) {
@@ -24,7 +28,7 @@ public class Ex02 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    String compute(String input) {
+    String compute(int a, int b, int c) {
         String output = null;
         //put your logic here
         return output;
