@@ -32,7 +32,7 @@ public class Ex04 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    int compute(String input) {
+    int compute(int ia, int ib, int fa, int fb) {
         int output = -1;
         //put your logic here
         return output;

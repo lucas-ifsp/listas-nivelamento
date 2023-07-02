@@ -9,25 +9,25 @@ import static org.junit.jupiter.api.Assertions.*;
 class Ex04Test {
     @ParameterizedTest
     @CsvSource(delimiterString = "=>", textBlock = """
-        0 0 0 1 => 2
-        0 0 1 1 => 1
-        1 0 0 0 => 1
-        1 1 1 0 => 2
-        1 1 0 1 => 1
-        1 1 1 1 => 0
-        1 0 0 0 => 1
-        1 0 1 0 => 0
-        1 0 0 1 => 1
-        1 0 1 1 => 2
-        0 1 0 0 => 2
-        0 1 1 0 => 1
-        0 1 0 1 => 0
-        0 1 1 1 => 1
-        0 0 0 0 => 0
-        0 0 1 0 => 1
+        0, 0, 0, 1 => 2
+        0, 0, 1, 1 => 1
+        1, 0, 0, 0 => 1
+        1, 1, 1, 0 => 2
+        1, 1, 0, 1 => 1
+        1, 1, 1, 1 => 0
+        1, 0, 0, 0 => 1
+        1, 0, 1, 0 => 0
+        1, 0, 0, 1 => 1
+        1, 0, 1, 1 => 2
+        0, 1, 0, 0 => 2
+        0, 1, 1, 0 => 1
+        0, 1, 0, 1 => 0
+        0, 1, 1, 1 => 1
+        0, 0, 0, 0 => 0
+        0, 0, 1, 0 => 1
     """)
-    void testCompute(String input, int expected){
+    void testCompute(int ia, int ib, int fa, int fb, int expected){
         Ex04 sut = new Ex04();
-        assertThat(sut.compute(input)).isEqualTo(expected);
+        assertThat(sut.compute(ia, ib, fa, fb)).isEqualTo(expected);
     }
 }
