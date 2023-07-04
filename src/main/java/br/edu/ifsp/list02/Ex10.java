@@ -35,7 +35,7 @@ public class Ex10 {
         //Escreva o resultado da chamada do método compute() aqui
     }
 
-    String compute(String input) {
+    String compute(int x, int y, int a, int f, int d) {
         String output = null;
         //put your logic here
         return output;
