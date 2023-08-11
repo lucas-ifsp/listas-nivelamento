@@ -7,7 +7,7 @@ Por exemplo, as palavras “roma” e “amor” são anagramas. Considere como 
  */
 public class Ex04 {
     public static void main(String[] args) {
-        //Leia o input
+        //Leia o ‘input’
         //Crie uma variável do tipo deste arquivo. Exemplo: Ex02 ex = new Ex02();
         //Escreva o resultado da chamada do método compute() aqui
     }

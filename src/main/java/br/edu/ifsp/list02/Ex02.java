@@ -18,16 +18,48 @@ package br.edu.ifsp.list02;
     Entrada = -10 0 10 20 30           | Saída = 90, 50, 10, -30, -70
               100 50 0 -50 -100
 */
+
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.StringJoiner;
+
 public class Ex02 {
+
+    public static final int NUM_VALUES = 5;
+
     public static void main(String[] args) {
-        //Leia o input
-        //Crie uma variável do tipo deste arquivo. Exemplo: Ex02 ex = new Ex02();
-        //Escreva o resultado da chamada do método compute() aqui
+        final String format = String.format(Locale.ITALY, "%.2f", 3.45655635);
+        System.out.printf(format);
+        /*final int[] arrayA = new int[NUM_VALUES];
+        final int[] arrayB = new int[NUM_VALUES];
+        final Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < arrayA.length; i++)
+            arrayA[i] = scanner.nextInt();
+
+        for (int i = 0; i < arrayB.length; i++)
+            arrayB[i] = scanner.nextInt();
+
+        final Ex02 ex02 = new Ex02();
+        System.out.println(ex02.compute(arrayA, arrayB));*/
     }
 
     String compute(int[] arrayA, int[] arrayB) {
-        String output = null;
-        //put your logic here
-        return output;
+        final var arrayC = new int[NUM_VALUES];
+
+        for (int i = 0; i < arrayC.length; i++) {
+            if(sumOverflowsOrUnderflows(arrayA[i], arrayB[i])) return "Erro";
+            arrayC[i] = arrayA[i] + arrayB[i];
+        }
+
+        final var joiner = new StringJoiner(", ");
+        for (int value : arrayC) joiner.add(String.valueOf(value));
+
+        return joiner.toString();
+    }
+
+    private static boolean sumOverflowsOrUnderflows(int aNumber, int otherNumber) {
+        return (long) aNumber + otherNumber > Integer.MAX_VALUE ||
+                (long) aNumber + otherNumber < Integer.MIN_VALUE;
     }
 }

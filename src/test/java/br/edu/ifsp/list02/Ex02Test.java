@@ -22,7 +22,7 @@ class Ex02Test {
     }
 
     private static int[] stringToArray(String arrayString) {
-        String[] stringValues = arrayString.split(", ");
+        String[] stringValues = arrayString.split(" ");
         int[] array = new int[stringValues.length];
         for (int i = 0; i < stringValues.length; i++) {
             array[i] = Integer.parseInt(stringValues[i]);
