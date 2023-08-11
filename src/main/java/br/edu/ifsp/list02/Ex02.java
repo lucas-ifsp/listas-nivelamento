@@ -28,9 +28,7 @@ public class Ex02 {
     public static final int NUM_VALUES = 5;
 
     public static void main(String[] args) {
-        final String format = String.format(Locale.ITALY, "%.2f", 3.45655635);
-        System.out.printf(format);
-        /*final int[] arrayA = new int[NUM_VALUES];
+        final int[] arrayA = new int[NUM_VALUES];
         final int[] arrayB = new int[NUM_VALUES];
         final Scanner scanner = new Scanner(System.in);
 
@@ -41,7 +39,7 @@ public class Ex02 {
             arrayB[i] = scanner.nextInt();
 
         final Ex02 ex02 = new Ex02();
-        System.out.println(ex02.compute(arrayA, arrayB));*/
+        System.out.println(ex02.compute(arrayA, arrayB));
     }
 
     String compute(int[] arrayA, int[] arrayB) {
