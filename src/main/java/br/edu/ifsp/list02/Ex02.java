@@ -38,7 +38,7 @@ public class Ex02 {
         for (int i = 0; i < arrayB.length; i++)
             arrayB[i] = scanner.nextInt();
 
-        final Ex02 ex02 = new Ex02();
+        final Ex02 ex02 = new Ex02();//
         System.out.println(ex02.compute(arrayA, arrayB));
     }
 
